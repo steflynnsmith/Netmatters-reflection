@@ -1,0 +1,48 @@
+.carousel {
+    
+    background: #555;
+
+    background: url(../../img/carousel-bg.jpg) center no-repeat;
+    background-size: cover;
+}
+
+
+.carousel-shading {
+    background: linear-gradient(to left, rgba(0,0,0,0) 0,rgba(0,0,0,1) 100%);
+    
+    
+}
+
+.container-carousel {
+    
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    > * {color:white;
+      
+    }
+    h1{
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 1.25em;
+    }
+    a {
+        margin-top: 1em;
+        font-size: 1.25em;
+        display: inline-block;
+        padding: 15px 20px;
+        text-transform: uppercase;
+        background: $priRed;
+        border-radius: 3px;
+        &:hover {
+            background: darken($priRed, 10%);
+        }
+    }
+
+}
+.fa-arrow-right {
+    color: white;
+
+}

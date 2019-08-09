@@ -353,6 +353,11 @@ template {
   letter-spacing: 0.4px;
 }
 
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .header-innerbox {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -423,6 +428,56 @@ template {
   width: 52px;
   border: #333645 2px solid;
   border-radius: 3px;
+}
+
+.carousel {
+  background: #555;
+  background: url(../../img/carousel-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.carousel-shading {
+  background: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0, black 100%);
+}
+
+.container-carousel {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.container-carousel > * {
+  color: white;
+}
+
+.container-carousel h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.container-carousel p {
+  font-size: 1.25em;
+}
+
+.container-carousel a {
+  margin-top: 1em;
+  font-size: 1.25em;
+  display: inline-block;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  background: #d64541;
+  border-radius: 3px;
+}
+
+.container-carousel a:hover {
+  background: #bc2c28;
+}
+
+.fa-arrow-right {
+  color: white;
 }
 
 @media only screen and (max-width: 767px) {
