@@ -15,3 +15,14 @@ $priStilton : rgb(103,128,159);
 $priGreen   : rgb(46, 204, 113);
 $priPink    : rgb(246, 36, 89);
 
+/*MAPS MAPS MAPS MAPS*/
+
+$departments: (
+    'design': $priLilac,
+    "itsupport": $priBlue,
+    "telecoms": $priRed,
+    "software": $priStilton,
+    "marketing": $priGreen,
+    "security": $priPink
+);
+
