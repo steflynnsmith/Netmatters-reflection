@@ -29,22 +29,23 @@
         margin:auto;
     }
     p {
-        padding-bottom: 15px;
+        padding: 0 10px;
         font-size:0.8em;
     }
     h3 {
-        padding: 20px;
+        padding: 10px;
         font-size: 1.15em;
-    }
-    a {
+    }  
+
+}
+
+.card-services-button {
+    
         display: inline-block;
         text-transform: uppercase;
         padding: 7px 15px;
         border-radius: 3px;
-    }
-
     
-
 }
 
 @each $department, $colourCode in $departments {
