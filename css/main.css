@@ -390,6 +390,10 @@ a:hover {
   color: white;
 }
 
+.btn-support:hover {
+  background: #286abd;
+}
+
 .btn-contact {
   margin: auto 20px;
   padding: 10px;
@@ -404,23 +408,22 @@ a:hover {
   color: white;
 }
 
+.btn-contact:hover {
+  background: #7e808a;
+}
+
 .icon-mouse {
-  display: block;
-  background: url("../../img/icons/mouse-icon.png") no-repeat center;
-  background-size: cover;
-  width: 22px;
-  height: 22px;
-  margin-top: 3px;
+  color: white;
+  padding-top: 10px;
   float: left;
+  margin-top: -5px;
 }
 
 .icon-plane {
-  display: block;
-  background: url("../../img/icons/plane-icon.png") no-repeat center;
-  background-size: cover;
-  width: 28px;
-  height: 28px;
   float: left;
+  color: white;
+  font-size: 1.5em;
+  margin-top: 5px;
 }
 
 .btn-menu img {

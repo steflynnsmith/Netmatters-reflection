@@ -25,6 +25,9 @@
         text-transform: uppercase;
         color:white;
     }
+    &:hover {
+        background: darken($priBlue, 10%);
+    }
 }
 
 .btn-contact {
@@ -38,24 +41,34 @@
         text-transform: uppercase;
         color:white;
     }
+    &:hover {
+        background: darken(#999aa2, 10%);
+    }
 }
 .icon-mouse {
-    display:block;
-    background: url("../../img/icons/mouse-icon.png") no-repeat center;
-    background-size: cover;
-    width: 22px;
-    height: 22px;    
-    margin-top:3px;
-    float: left;  
+    color: white;
+    padding-top: 10px;
+    float:left;
+    margin-top:-5px;
+    // display:block;
+    // background: url("../../img/icons/mouse-icon.png") no-repeat center;
+    // background-size: cover;
+    // width: 22px;
+    // height: 22px;    
+    // margin-top:3px;
+    // float: left;  
 }
 .icon-plane {
-    display:block;
-    background: url("../../img/icons/plane-icon.png") no-repeat center;
-    background-size: cover;
-    width: 28px;
-    height: 28px;
+    // display:block;
+    // background: url("../../img/icons/plane-icon.png") no-repeat center;
+    // background-size: cover;
+    // width: 28px;
+    // height: 28px;
     // margin-top:4px;
     float: left;  
+    color:white;
+    font-size: 1.5em;
+    margin-top: 5px;
 }
 
 
