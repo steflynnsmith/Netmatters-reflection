@@ -1,0 +1,12 @@
+TO DO:
+
+Sections:
+    Header
+    Navbar
+    Drop-down navlinks
+    Carousel
+    Services Grid
+    History
+    News Cards
+    Company Logos
+    Footer
