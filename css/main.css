@@ -361,6 +361,12 @@ a:hover {
   text-decoration: none;
 }
 
+h1 {
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
 .header-innerbox {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -457,11 +463,6 @@ a:hover {
 
 .container-carousel > * {
   color: white;
-}
-
-.container-carousel h1 {
-  font-size: 3em;
-  text-transform: uppercase;
 }
 
 .container-carousel p {
@@ -658,6 +659,19 @@ a:hover {
 .card-services:hover p,
 .card-services:hover h3 {
   color: white;
+}
+
+.history {
+  background: #333645;
+}
+
+.history-container p,
+.history-container h1 {
+  color: white;
+}
+
+.history-container p:first-of-type {
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 767px) {

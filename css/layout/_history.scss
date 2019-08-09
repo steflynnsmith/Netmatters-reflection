@@ -1,0 +1,14 @@
+.history {
+    background: $bgPurple;
+}
+
+.history-container {
+    p,
+    h1 {
+        color:white;
+    }
+    p:first-of-type {
+        font-weight: bold;
+    }
+
+}
