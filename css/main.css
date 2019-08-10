@@ -367,6 +367,29 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  color: white;
+  font-size: 2.3em;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.readmore-button {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 7px 15px;
+  border-radius: 3px;
+}
+
 .header-innerbox {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -534,13 +557,11 @@ h1 {
   font-size: 1.15em;
 }
 
-.card-services-button {
+.readmore-button {
   display: inline-block;
-  text-transform: uppercase;
-  padding: 7px 15px;
-  border-radius: 3px;
 }
 
+/* Card Colouring----------------------------------------------*/
 .card-services i.design,
 .card-services a.design {
   background: #926fb1;
@@ -662,16 +683,311 @@ h1 {
 }
 
 .history {
-  background: #333645;
+  background: #333645 url("../../img/branded.png") no-repeat right center;
+  background-size: cover;
+}
+
+.history-grid-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .history-container p,
-.history-container h1 {
+.history-container h2 {
   color: white;
+  margin-bottom: 25px;
 }
 
 .history-container p:first-of-type {
   font-weight: bold;
+}
+
+.history-container a {
+  letter-spacing: 0.06em;
+  padding: 11px 15px;
+  background: white;
+  border-radius: 3px;
+  color: #333645;
+  text-transform: uppercase;
+}
+
+.history-container a i {
+  color: #333645;
+  padding-left: 15px;
+}
+
+.history-container a:hover {
+  background-color: #f2f2f2;
+}
+
+/* LATEST BAR-----------------------------------------------*/
+.text-latest {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #333645;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 30px 0;
+  border-bottom: 4px #333645 solid;
+}
+
+.bg-latest {
+  -webkit-box-shadow: 0px 24px 56px -26px #ccc;
+          box-shadow: 0px 24px 56px -26px #ccc;
+}
+
+/* News Cards & BG -----------------------------------------------*/
+.news-container {
+  padding: 50px 0;
+}
+
+.news-item {
+  -webkit-box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1);
+}
+
+.news-item-image,
+.news-innerbox {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.news-innerbox {
+  border-top: none;
+  padding: 30px;
+}
+
+.news-innerbox p {
+  font-size: 0.8em;
+}
+
+.news-item-image {
+  position: relative;
+  overflow: hidden;
+  text-align: right;
+}
+
+.news-item-image img {
+  width: 100%;
+}
+
+.news-taglink {
+  top: 5%;
+  right: 0;
+  margin: 0;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1000;
+}
+
+.news-poster {
+  margin-top: 25px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.news-poster .news-avatar {
+  border-radius: 50%;
+  margin-top: -30px;
+}
+
+.news-poster div {
+  display: inline-block;
+  font-size: 0.875em;
+}
+
+.news-poster div span:nth-of-type(1) {
+  font-weight: bold;
+}
+
+.news-poster div span:nth-of-type(2) {
+  color: grey;
+}
+
+.news-poster-details {
+  padding: 20px 20px 0;
+}
+
+.news-item-image img {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.news-item-image:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Card Colouring-----------------------------------------------*/
+.news-innerbox h4.design {
+  color: #926fb1;
+}
+
+.news-innerbox a.design:nth-of-type(1) {
+  display: inline-block;
+  color: #926fb1;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.news-innerbox a.design:nth-of-type(1):hover {
+  text-decoration: underline;
+}
+
+.news-innerbox a.design:nth-of-type(2) {
+  background: #926fb1;
+}
+
+.news-innerbox a.design:nth-of-type(2):hover {
+  background: #79539a;
+}
+
+.news-item-image a.design {
+  background: #926fb1;
+}
+
+.news-innerbox h4.itsupport {
+  color: #4183d7;
+}
+
+.news-innerbox a.itsupport:nth-of-type(1) {
+  display: inline-block;
+  color: #4183d7;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.news-innerbox a.itsupport:nth-of-type(1):hover {
+  text-decoration: underline;
+}
+
+.news-innerbox a.itsupport:nth-of-type(2) {
+  background: #4183d7;
+}
+
+.news-innerbox a.itsupport:nth-of-type(2):hover {
+  background: #286abd;
+}
+
+.news-item-image a.itsupport {
+  background: #4183d7;
+}
+
+.news-innerbox h4.telecoms {
+  color: #d64541;
+}
+
+.news-innerbox a.telecoms:nth-of-type(1) {
+  display: inline-block;
+  color: #d64541;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.news-innerbox a.telecoms:nth-of-type(1):hover {
+  text-decoration: underline;
+}
+
+.news-innerbox a.telecoms:nth-of-type(2) {
+  background: #d64541;
+}
+
+.news-innerbox a.telecoms:nth-of-type(2):hover {
+  background: #bc2c28;
+}
+
+.news-item-image a.telecoms {
+  background: #d64541;
+}
+
+.news-innerbox h4.software {
+  color: #67809f;
+}
+
+.news-innerbox a.software:nth-of-type(1) {
+  display: inline-block;
+  color: #67809f;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.news-innerbox a.software:nth-of-type(1):hover {
+  text-decoration: underline;
+}
+
+.news-innerbox a.software:nth-of-type(2) {
+  background: #67809f;
+}
+
+.news-innerbox a.software:nth-of-type(2):hover {
+  background: #526781;
+}
+
+.news-item-image a.software {
+  background: #67809f;
+}
+
+.news-innerbox h4.marketing {
+  color: #2ecc71;
+}
+
+.news-innerbox a.marketing:nth-of-type(1) {
+  display: inline-block;
+  color: #2ecc71;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.news-innerbox a.marketing:nth-of-type(1):hover {
+  text-decoration: underline;
+}
+
+.news-innerbox a.marketing:nth-of-type(2) {
+  background: #2ecc71;
+}
+
+.news-innerbox a.marketing:nth-of-type(2):hover {
+  background: #25a25a;
+}
+
+.news-item-image a.marketing {
+  background: #2ecc71;
+}
+
+.news-innerbox h4.security {
+  color: #f62459;
+}
+
+.news-innerbox a.security:nth-of-type(1) {
+  display: inline-block;
+  color: #f62459;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+.news-innerbox a.security:nth-of-type(1):hover {
+  text-decoration: underline;
+}
+
+.news-innerbox a.security:nth-of-type(2) {
+  background: #f62459;
+}
+
+.news-innerbox a.security:nth-of-type(2):hover {
+  background: #de093f;
+}
+
+.news-item-image a.security {
+  background: #f62459;
 }
 
 @media only screen and (max-width: 767px) {

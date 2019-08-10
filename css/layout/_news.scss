@@ -1,0 +1,121 @@
+/* LATEST BAR-----------------------------------------------*/
+.text-latest {
+    display: inline-block;
+    text-transform: uppercase;
+    color: $bgPurple;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 30px 0;
+    border-bottom: 4px $bgPurple solid;
+}
+.bg-latest {
+    box-shadow: 0px 24px 56px -26px #ccc;
+}
+
+/* News Cards & BG -----------------------------------------------*/
+
+.news-container {
+    padding:50px 0;
+}
+
+.news-item {
+    box-shadow: 0px 3px 35px 0px rgba(0,0,0,0.1);
+}
+
+
+.news-item-image,
+.news-innerbox {
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.news-innerbox {
+    border-top:none;
+    padding:30px;
+    p {
+        font-size:0.8em;
+    }
+}
+.news-item-image {
+    position: relative;
+    overflow: hidden;
+    img {
+        width:100%;  
+    }
+    text-align: right;
+    
+}
+.news-taglink {
+    top:5%;
+    // left:0;
+    right:0;
+    margin:0;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1000;
+}
+
+
+.news-poster {
+    margin-top: 25px;
+    border-top: 1px solid rgba(0,0,0,0.2); 
+    .news-avatar {
+        // display: inline-block;
+        border-radius: 50%;
+        margin-top: -30px;
+    }
+    div {
+        display: inline-block;
+        font-size: 0.875em;
+        span:nth-of-type(1) {
+            font-weight: bold;
+        }
+        span:nth-of-type(2) {
+            color: grey;
+        }
+    }
+}
+
+.news-poster-details {
+    padding: 20px 20px 0;
+}
+
+.news-item-image img {
+    transition: all .2s;
+}
+.news-item-image:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+/* Card Colouring-----------------------------------------------*/
+
+@each $department, $colourCode in $departments {
+    .news-innerbox {
+        h4.#{$department} {
+            color: $colourCode;
+        }
+        a.#{$department}:nth-of-type(1) {
+            display:inline-block;
+            color: $colourCode;
+            font-size: 1em;
+            font-weight: bold;
+            line-height: 1.5em;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        a.#{$department}:nth-of-type(2) {
+            background: $colourCode;
+            &:hover {
+                background: darken($colourCode, 10%);
+            }
+        }
+    }
+    .news-item-image {
+        a.#{$department} {
+        background: $colourCode;
+        }
+    }
+}

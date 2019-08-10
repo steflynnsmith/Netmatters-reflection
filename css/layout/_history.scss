@@ -1,14 +1,39 @@
 .history {
-    background: $bgPurple;
+    background: $bgPurple url("../../img/branded.png") no-repeat right center;
+    background-size: cover;
 }
+// .history-nm-logo {
+//     background: 
+    
+// }
+.history-grid-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
 
+}
 .history-container {
     p,
-    h1 {
+    h2 {
         color:white;
+        margin-bottom: 25px;
     }
     p:first-of-type {
         font-weight: bold;
+    }
+    a {
+        letter-spacing: 0.06em;
+        padding: 11px 15px;
+        background: white;
+        border-radius: 3px;
+        color: $bgPurple;
+        text-transform: uppercase;
+        i {
+            color: $bgPurple;
+            padding-left: 15px;
+        }
+        &:hover {
+            background-color: darken(white, 5%);
+        }
     }
 
 }
