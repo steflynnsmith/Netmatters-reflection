@@ -737,10 +737,13 @@ h4 {
 }
 
 /* News Cards & BG -----------------------------------------------*/
-.news-container {
-  padding: 50px 0;
+.news {
   -webkit-box-shadow: 0px 24px 56px -26px #ccc;
           box-shadow: 0px 24px 56px -26px #ccc;
+}
+
+.news-container {
+  padding: 50px 0;
 }
 
 .news-item {
@@ -830,6 +833,7 @@ h4 {
 
 .news-innerbox a.design:nth-of-type(1) {
   display: inline-block;
+  height: 48px;
   color: #926fb1;
   font-size: 1em;
   font-weight: bold;
@@ -858,6 +862,7 @@ h4 {
 
 .news-innerbox a.itsupport:nth-of-type(1) {
   display: inline-block;
+  height: 48px;
   color: #4183d7;
   font-size: 1em;
   font-weight: bold;
@@ -886,6 +891,7 @@ h4 {
 
 .news-innerbox a.telecoms:nth-of-type(1) {
   display: inline-block;
+  height: 48px;
   color: #d64541;
   font-size: 1em;
   font-weight: bold;
@@ -914,6 +920,7 @@ h4 {
 
 .news-innerbox a.software:nth-of-type(1) {
   display: inline-block;
+  height: 48px;
   color: #67809f;
   font-size: 1em;
   font-weight: bold;
@@ -942,6 +949,7 @@ h4 {
 
 .news-innerbox a.marketing:nth-of-type(1) {
   display: inline-block;
+  height: 48px;
   color: #2ecc71;
   font-size: 1em;
   font-weight: bold;
@@ -970,6 +978,7 @@ h4 {
 
 .news-innerbox a.security:nth-of-type(1) {
   display: inline-block;
+  height: 48px;
   color: #f62459;
   font-size: 1em;
   font-weight: bold;
@@ -1005,8 +1014,8 @@ h4 {
 }
 
 .companies-container img {
-  width: 10px;
-  margin: 20px;
+  width: 100%;
+  margin: auto;
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
   opacity: 0.8;
@@ -1018,24 +1027,93 @@ h4 {
           filter: grayscale(0);
 }
 
-.companies-container img:nth-of-type(1) {
+.companies-container .logo-busseys {
+  position: relative;
   -ms-flex-preferred-size: 17%;
       flex-basis: 17%;
+  margin: 20px;
 }
 
-.companies-container img:nth-of-type(2) {
+.companies-container .logo-crane {
+  position: relative;
   -ms-flex-preferred-size: 25.7%;
       flex-basis: 25.7%;
+  margin: 20px;
 }
 
-.companies-container img:nth-of-type(3) {
+.companies-container .logo-beat {
+  position: relative;
   -ms-flex-preferred-size: 6.5%;
       flex-basis: 6.5%;
+  margin: 20px;
 }
 
-.companies-container img:nth-of-type(4) {
+.companies-container .logo-northern {
+  position: relative;
   -ms-flex-preferred-size: 28.8%;
       flex-basis: 28.8%;
+  margin: 20px;
+}
+
+/*--Popovers---------------------------------------*/
+[class^="companies-popover"] {
+  visibility: hidden;
+  width: 260px;
+  bottom: 100%;
+  left: 50%;
+  padding: 20px;
+  margin-bottom: 50px;
+  margin-left: -130px;
+  background-color: #333645;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+[class^="companies-popover"] :hover {
+  visibility: visible;
+}
+
+[class^="companies-popover"] ::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background: #333645;
+  -webkit-transform: rotate(45deg) translate(-28.3px, 0px);
+          transform: rotate(45deg) translate(-28.3px, 0px);
+}
+
+[class^="companies-popover"] p,
+[class^="companies-popover"] h3 {
+  color: white;
+}
+
+[class^="companies-popover"] p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+[class^="companies-popover"] h3 {
+  font-size: 1.15em;
+}
+
+.logo-busseys-img:hover ~ .companies-popover-busseys {
+  visibility: visible;
+}
+
+.logo-crane-img:hover ~ .companies-popover-crane {
+  visibility: visible;
+}
+
+.logo-beat-img:hover ~ .companies-popover-beat {
+  visibility: visible;
+}
+
+.logo-northern-img:hover ~ .companies-popover-northern {
+  visibility: visible;
 }
 
 @media only screen and (max-width: 767px) {

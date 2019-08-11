@@ -14,9 +14,12 @@
 
 /* News Cards & BG -----------------------------------------------*/
 
+.news {
+    box-shadow: 0px 24px 56px -26px #ccc;
+}
 .news-container {
     padding:50px 0;
-    box-shadow: 0px 24px 56px -26px #ccc;
+   
 }
 
 .news-item {
@@ -99,6 +102,7 @@
         }
         a.#{$department}:nth-of-type(1) {
             display:inline-block;
+            height: 48px;
             color: $colourCode;
             font-size: 1em;
             font-weight: bold;
