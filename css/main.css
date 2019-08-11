@@ -739,6 +739,8 @@ h4 {
 /* News Cards & BG -----------------------------------------------*/
 .news-container {
   padding: 50px 0;
+  -webkit-box-shadow: 0px 24px 56px -26px #ccc;
+          box-shadow: 0px 24px 56px -26px #ccc;
 }
 
 .news-item {
@@ -988,6 +990,52 @@ h4 {
 
 .news-item-image a.security {
   background: #f62459;
+}
+
+.companies-container {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.companies-container img {
+  width: 10px;
+  margin: 20px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.8;
+}
+
+.companies-container img:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.companies-container img:nth-of-type(1) {
+  -ms-flex-preferred-size: 17%;
+      flex-basis: 17%;
+}
+
+.companies-container img:nth-of-type(2) {
+  -ms-flex-preferred-size: 25.7%;
+      flex-basis: 25.7%;
+}
+
+.companies-container img:nth-of-type(3) {
+  -ms-flex-preferred-size: 6.5%;
+      flex-basis: 6.5%;
+}
+
+.companies-container img:nth-of-type(4) {
+  -ms-flex-preferred-size: 28.8%;
+      flex-basis: 28.8%;
 }
 
 @media only screen and (max-width: 767px) {
