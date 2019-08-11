@@ -16,10 +16,12 @@
 
 .btn-support {
     margin: auto 0;
-    padding: 10px;
+    padding: 11px 10px 10px 10px;
+    border-radius: 3px;
+
     background: $priBlue;
     &-text {
-        font-size: 1.15em;
+        font-size: 1.125em;
         padding-left: 0.4em;
         // text-align: center;
         text-transform: uppercase;
@@ -32,10 +34,10 @@
 
 .btn-contact {
     margin: auto 20px;
-    padding: 10px;
+    padding: 11px 10px 10px 10px;
     background: #999aa2;
     &-text {
-        font-size: 1.15em;
+        font-size: 1.125em;
         padding-left: 0.4em;
         text-align: start;
         text-transform: uppercase;

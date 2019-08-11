@@ -408,12 +408,13 @@ h4 {
 
 .btn-support {
   margin: auto 0;
-  padding: 10px;
+  padding: 11px 10px 10px 10px;
+  border-radius: 3px;
   background: #4183d7;
 }
 
 .btn-support-text {
-  font-size: 1.15em;
+  font-size: 1.125em;
   padding-left: 0.4em;
   text-transform: uppercase;
   color: white;
@@ -425,12 +426,12 @@ h4 {
 
 .btn-contact {
   margin: auto 20px;
-  padding: 10px;
+  padding: 11px 10px 10px 10px;
   background: #999aa2;
 }
 
 .btn-contact-text {
-  font-size: 1.15em;
+  font-size: 1.125em;
   padding-left: 0.4em;
   text-align: start;
   text-transform: uppercase;
