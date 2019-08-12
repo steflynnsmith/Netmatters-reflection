@@ -1080,15 +1080,6 @@ a:active .btn-clicked {
 .companies-container img {
   width: 100%;
   margin: auto;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-  opacity: 0.8;
-}
-
-.companies-container img:hover {
-  opacity: 1;
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
 }
 
 .companies-container .logo-busseys {
@@ -1096,6 +1087,15 @@ a:active .btn-clicked {
   -ms-flex-preferred-size: 17%;
       flex-basis: 17%;
   margin: 20px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.8;
+}
+
+.companies-container .logo-busseys:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .companies-container .logo-crane {
@@ -1103,6 +1103,15 @@ a:active .btn-clicked {
   -ms-flex-preferred-size: 25.7%;
       flex-basis: 25.7%;
   margin: 20px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.8;
+}
+
+.companies-container .logo-crane:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .companies-container .logo-beat {
@@ -1110,6 +1119,15 @@ a:active .btn-clicked {
   -ms-flex-preferred-size: 6.5%;
       flex-basis: 6.5%;
   margin: 20px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.8;
+}
+
+.companies-container .logo-beat:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .companies-container .logo-northern {
@@ -1117,6 +1135,15 @@ a:active .btn-clicked {
   -ms-flex-preferred-size: 28.8%;
       flex-basis: 28.8%;
   margin: 20px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.8;
+}
+
+.companies-container .logo-northern:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 /*--Popovers---------------------------------------*/
@@ -1129,7 +1156,6 @@ a:active .btn-clicked {
 .transparent-pop {
   height: 50px;
   background: transparent;
-  width: 150%;
 }
 
 .companies-popover-busseys:hover {
@@ -1155,7 +1181,6 @@ a:active .btn-clicked {
   left: 50%;
   margin-bottom: 0px;
   margin-left: -130px;
-  overflow: visible;
   text-align: center;
   position: absolute;
   z-index: 1;

@@ -7,6 +7,12 @@
     img {
         width:100%;
         margin: auto;
+        
+    }
+    .logo-busseys {
+        position: relative;
+        flex-basis: 17%;
+        margin:20px;
         filter: grayscale(1);
         opacity: 0.8;
         &:hover {
@@ -14,27 +20,40 @@
             filter: grayscale(0);
         }
     }
-    .logo-busseys {
-        position: relative;
-        flex-basis: 17%;
-        margin:20px;
-    }
     .logo-crane {
         position: relative;
         flex-basis: 25.7%;
         margin:20px;
+        filter: grayscale(1);
+        opacity: 0.8;
+        &:hover {
+            opacity: 1;
+            filter: grayscale(0);
+        }
 
     }
     .logo-beat {
         position: relative;
         flex-basis: 6.5%;
         margin:20px;
+        filter: grayscale(1);
+        opacity: 0.8;
+        &:hover {
+            opacity: 1;
+            filter: grayscale(0);
+        }
 
     }
     .logo-northern {
         position: relative;
         flex-basis: 28.8%;
         margin:20px;
+        filter: grayscale(1);
+        opacity: 0.8;
+        &:hover {
+            opacity: 1;
+            filter: grayscale(0);
+        }
 
     }
 }
@@ -43,15 +62,12 @@
 
 .companies-top-pop {
     background-color: $bgPurple;
-    
     margin:0;
     padding:20px;
 }
 .transparent-pop {
     height: 50px;
     background: transparent;
-    width: 150%;
-    
 }
 .companies-popover-busseys:hover {
     visibility: visible;
@@ -74,7 +90,7 @@
     // padding: 20px;
     margin-bottom: 0px;
     margin-left: -130px;
-    overflow: visible;
+    
     text-align: center;
     position: absolute;
     z-index: 1;
