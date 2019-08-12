@@ -42,15 +42,17 @@
     position: relative;
     overflow: hidden;
     img {
+        object-fit: fill;
         width:100%;  
+        // max-width: 100%;
     }
     text-align: right;
     
 }
 .news-taglink {
-    top:5%;
+    top:2%;
     // left:0;
-    right:0;
+    right:15px;
     margin:0;
     padding: 0 10px;
     text-transform: uppercase;
@@ -61,6 +63,48 @@
     z-index: 1000;
 }
 
+[class^="news-popover"] {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    margin:0;
+    font-size:0.7em;
+    color: white;
+    width: 200px;
+    bottom: 100%;
+    right: -60px; 
+    padding: 3px;
+    background-color: lighten($bgPurple, 10%);
+    text-align: center;
+    
+    z-index: 2;
+
+    transition: opacity .2s  ease-out;
+    
+}
+.news-arrow-popover {
+    visibility: hidden;
+    position: absolute;
+    opacity:0;
+    width: 10px;
+    height: 10px;
+    top: -5px;
+    right: 38px; 
+    // padding: 1px;
+    background-color: lighten($bgPurple, 10%);
+    transform: rotate(45deg);
+    
+    z-index: 1;
+
+    transition: opacity .4s  ease;
+}
+
+.news-taglink:hover ~ .news-arrow-popover,
+.news-taglink:hover ~ .news-popover
+ {
+    visibility: visible;
+    opacity:1;
+}
 
 .news-poster {
     margin-top: 25px;
@@ -118,9 +162,9 @@
             }
         }
     }
-    .news-item-image {
-        a.#{$department} {
+    .news-taglink.#{$department} {
+        
         background: $colourCode;
-        }
+        
     }
 }

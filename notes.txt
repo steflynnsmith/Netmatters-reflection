@@ -1,12 +1,5 @@
 TO DO:
 
-Sections:
-    Header
-    Navbar
-    Drop-down navlinks
-    Carousel
-    Services Grid
-    History
-    News Cards
-    Company Logos
-    Footer
+Sponsors section
+Links in footer
+popover from news section

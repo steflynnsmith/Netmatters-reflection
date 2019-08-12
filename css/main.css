@@ -375,7 +375,8 @@ h2 {
 
 h4 {
   font-size: 1em;
-  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
 }
 
 .container {
@@ -428,6 +429,7 @@ h4 {
   margin: auto 20px;
   padding: 11px 10px 10px 10px;
   background: #999aa2;
+  border-radius: 3px;
 }
 
 .btn-contact-text {
@@ -773,12 +775,14 @@ h4 {
 }
 
 .news-item-image img {
+  -o-object-fit: fill;
+     object-fit: fill;
   width: 100%;
 }
 
 .news-taglink {
-  top: 5%;
-  right: 0;
+  top: 2%;
+  right: 15px;
   margin: 0;
   padding: 0 10px;
   text-transform: uppercase;
@@ -787,6 +791,46 @@ h4 {
   font-weight: bold;
   position: absolute;
   z-index: 1000;
+}
+
+[class^="news-popover"] {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  font-size: 0.7em;
+  color: white;
+  width: 200px;
+  bottom: 100%;
+  right: -60px;
+  padding: 3px;
+  background-color: #494d62;
+  text-align: center;
+  z-index: 2;
+  -webkit-transition: opacity .2s  ease-out;
+  transition: opacity .2s  ease-out;
+}
+
+.news-arrow-popover {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  right: 38px;
+  background-color: #494d62;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  z-index: 1;
+  -webkit-transition: opacity .4s  ease;
+  transition: opacity .4s  ease;
+}
+
+.news-taglink:hover ~ .news-arrow-popover,
+.news-taglink:hover ~ .news-popover {
+  visibility: visible;
+  opacity: 1;
 }
 
 .news-poster {
@@ -853,7 +897,7 @@ h4 {
   background: #79539a;
 }
 
-.news-item-image a.design {
+.news-taglink.design {
   background: #926fb1;
 }
 
@@ -882,7 +926,7 @@ h4 {
   background: #286abd;
 }
 
-.news-item-image a.itsupport {
+.news-taglink.itsupport {
   background: #4183d7;
 }
 
@@ -911,7 +955,7 @@ h4 {
   background: #bc2c28;
 }
 
-.news-item-image a.telecoms {
+.news-taglink.telecoms {
   background: #d64541;
 }
 
@@ -940,7 +984,7 @@ h4 {
   background: #526781;
 }
 
-.news-item-image a.software {
+.news-taglink.software {
   background: #67809f;
 }
 
@@ -969,7 +1013,7 @@ h4 {
   background: #25a25a;
 }
 
-.news-item-image a.marketing {
+.news-taglink.marketing {
   background: #2ecc71;
 }
 
@@ -998,12 +1042,13 @@ h4 {
   background: #de093f;
 }
 
-.news-item-image a.security {
+.news-taglink.security {
   background: #f62459;
 }
 
 .companies-container {
   margin-top: 30px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1115,6 +1160,56 @@ h4 {
 
 .logo-northern-img:hover ~ .companies-popover-northern {
   visibility: visible;
+}
+
+footer {
+  background-color: #333645;
+  padding-top: 50px;
+}
+
+footer h4 {
+  margin-bottom: 26px;
+}
+
+footer p {
+  font-size: 0.8em;
+  color: white;
+  margin-bottom: 26px;
+}
+
+.social-media i {
+  color: white;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-button {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.social-button a {
+  font-size: 1.6em;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #22242e;
+  padding-top: 5px;
+}
+
+.social-media :nth-child(1) :hover {
+  background-color: #3b5998;
+}
+
+.social-media :nth-child(2) :hover {
+  background-color: #1da1f2;
+}
+
+.social-media :nth-child(3) :hover {
+  background-color: #0077b5;
 }
 
 @media only screen and (max-width: 767px) {
