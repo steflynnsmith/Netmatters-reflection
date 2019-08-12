@@ -41,7 +41,7 @@
 .readmore-button {
     
     display: inline-block;
-  
+      
 }
 
 /* Card Colouring----------------------------------------------*/
@@ -70,4 +70,8 @@
         
     }
     
+}
+a:active .btn-clicked {
+    color:red;
+    box-shadow: inset 0 0 3px 3px black;
 }
