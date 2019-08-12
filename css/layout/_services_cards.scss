@@ -36,6 +36,9 @@
         padding: 10px;
         font-size: 1.15em;
     }  
+    span {
+        margin-top: 10px;;
+    }
 
 }
 .readmore-button {
@@ -49,7 +52,8 @@
 @each $department, $colourCode in $departments {
     .card-services {
         i.#{$department},
-        a.#{$department} {
+        span.#{$department} {
+            color:white;
             background: $colourCode;
         }
     }
@@ -59,7 +63,7 @@
             background: $colourCode;
         }
         i.#{$department},
-        a.#{$department} {
+        span.#{$department} {
             background: white;
             color: $colourCode;
         }
@@ -71,7 +75,5 @@
     }
     
 }
-a:active .btn-clicked {
-    color:red;
-    box-shadow: inset 0 0 3px 3px black;
-}
+
+

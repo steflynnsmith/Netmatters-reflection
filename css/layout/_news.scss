@@ -61,6 +61,9 @@
     font-weight: bold;
     position: absolute;
     z-index: 1000;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 [class^="news-popover"] {
@@ -79,7 +82,7 @@
     
     z-index: 2;
 
-    transition: opacity .2s  ease-out;
+    transition: opacity .1s  ease-out;
     
 }
 .news-arrow-popover {
@@ -96,7 +99,7 @@
     
     z-index: 1;
 
-    transition: opacity .4s  ease;
+    transition: opacity .1s .1s  ease;
 }
 
 .news-taglink:hover ~ .news-arrow-popover,
