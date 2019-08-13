@@ -1,4 +1,18 @@
+@media only screen and (max-width: 1260px) {
+    .container {
+        max-width: 970px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
 @media only screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+    }
     .header-innerbox {
         margin:0;
         width:100%;
@@ -15,6 +29,11 @@
         margin-left:0;
         padding:0;
         max-width:50px;
+    }
+}
+@media only screen and (max-width: 1260px) {
+    .sublist li {
+        font-size: 0.9rem;
     }
 }
 
