@@ -417,6 +417,9 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .btn-support {
@@ -480,6 +483,7 @@ h4 {
   border-radius: 3px;
 }
 
+/*SERVICES SECTION -SERVICES SECTION -SERVICES SECTION -SERVICES SECTION -*/
 .header-services-menu {
   background: #333645;
   height: 100px;
@@ -1034,9 +1038,8 @@ h4 {
 }
 
 .news-item-image img {
-  -o-object-fit: fill;
-     object-fit: fill;
   width: 100%;
+  max-width: 100%;
 }
 
 .news-taglink {
@@ -1065,7 +1068,6 @@ h4 {
   color: white;
   width: 200px;
   bottom: 100%;
-  right: -60px;
   padding: 3px;
   background-color: #494d62;
   text-align: center;
@@ -1094,6 +1096,10 @@ h4 {
 .news-taglink:hover ~ .news-popover {
   visibility: visible;
   opacity: 1;
+}
+
+.news-taglink:hover ~ .news-popover {
+  right: -60px;
 }
 
 .news-poster {

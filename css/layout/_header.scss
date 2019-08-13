@@ -4,16 +4,13 @@
     height: 110px
 }
 
-.logo img{
-    // width:100%;
-    // margin: 20px 0;
-}
-
 .header-buttons {
     float: right;
     display: flex;
     flex-direction: row;
+    justify-content: start;
 }
+
 
 .btn-support {
     margin: auto 0;
@@ -54,21 +51,8 @@
     padding-top: 10px;
     float:left;
     margin-top:-5px;
-    // display:block;
-    // background: url("../../img/icons/mouse-icon.png") no-repeat center;
-    // background-size: cover;
-    // width: 22px;
-    // height: 22px;    
-    // margin-top:3px;
-    // float: left;  
 }
 .icon-plane {
-    // display:block;
-    // background: url("../../img/icons/plane-icon.png") no-repeat center;
-    // background-size: cover;
-    // width: 28px;
-    // height: 28px;
-    // margin-top:4px;
     float: left;  
     color:white;
     font-size: 1.5em;
@@ -86,6 +70,9 @@
     // margin: 20px;
 }
 
+
+
+/*SERVICES SECTION -SERVICES SECTION -SERVICES SECTION -SERVICES SECTION -*/
 
 .header-services-menu {
     background: $bgPurple;
