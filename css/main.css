@@ -737,6 +737,10 @@ h4 {
           flex-direction: column;
 }
 
+.services-blurb {
+  position: relative;
+}
+
 .card-services {
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -744,6 +748,7 @@ h4 {
           box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1);
   margin: auto;
   padding: 30px 5%;
+  position: relative;
 }
 
 .card-services i {
@@ -760,12 +765,23 @@ h4 {
 }
 
 .card-services p {
-  padding: 0 10px;
+  padding: 12px 10px 0;
+  margin-bottom: 0;
   font-size: 0.8em;
 }
 
+.card-services p:before {
+  content: '';
+  width: 7%;
+  border-bottom: solid 3px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  left: 46.5%;
+  top: 0%;
+  z-index: 1;
+}
+
 .card-services h3 {
-  padding: 10px;
+  padding: 12px;
   font-size: 1.15em;
 }
 
@@ -799,6 +815,10 @@ h4 {
   color: white;
 }
 
+.card-services:hover p:before {
+  border-color: white;
+}
+
 .card-services i.itsupport,
 .card-services span.itsupport {
   color: white;
@@ -818,6 +838,10 @@ h4 {
 .card-services:hover p,
 .card-services:hover h3 {
   color: white;
+}
+
+.card-services:hover p:before {
+  border-color: white;
 }
 
 .card-services i.telecoms,
@@ -841,6 +865,10 @@ h4 {
   color: white;
 }
 
+.card-services:hover p:before {
+  border-color: white;
+}
+
 .card-services i.software,
 .card-services span.software {
   color: white;
@@ -860,6 +888,10 @@ h4 {
 .card-services:hover p,
 .card-services:hover h3 {
   color: white;
+}
+
+.card-services:hover p:before {
+  border-color: white;
 }
 
 .card-services i.marketing,
@@ -883,6 +915,10 @@ h4 {
   color: white;
 }
 
+.card-services:hover p:before {
+  border-color: white;
+}
+
 .card-services i.security,
 .card-services span.security {
   color: white;
@@ -902,6 +938,10 @@ h4 {
 .card-services:hover p,
 .card-services:hover h3 {
   color: white;
+}
+
+.card-services:hover p:before {
+  border-color: white;
 }
 
 .history {
@@ -1352,31 +1392,36 @@ h4 {
 }
 
 /*--Popovers---------------------------------------*/
+.companies-top-pop-inner p:before {
+  content: '';
+  width: 7%;
+  border-bottom: solid 3px black;
+  position: absolute;
+  left: 46.5%;
+  top: 0%;
+  z-index: 10000;
+}
+
 .companies-top-pop {
+  position: relative;
   background-color: #333645;
   margin: 0;
   padding: 20px;
 }
 
+.companies-top-pop:before {
+  content: '';
+  width: 10%;
+  border-bottom: solid 3px rgba(255, 255, 255, 0.7);
+  position: absolute;
+  left: 45%;
+  top: 50px;
+  z-index: 10000;
+}
+
 .transparent-pop {
   height: 50px;
   background: transparent;
-}
-
-.companies-popover-busseys:hover {
-  visibility: visible;
-}
-
-.companies-popover-crane:hover {
-  visibility: visible;
-}
-
-.companies-popover-beat:hover {
-  visibility: visible;
-}
-
-.companies-popover-northern:hover {
-  visibility: visible;
 }
 
 [class^="companies-popover"] {
@@ -1395,7 +1440,7 @@ h4 {
   visibility: visible;
 }
 
-[class^="companies-popover"] ::after {
+[class^="companies-popover"]:after {
   content: "";
   position: absolute;
   top: 100%;
@@ -1411,6 +1456,7 @@ h4 {
 [class^="companies-popover"] p,
 [class^="companies-popover"] h3 {
   color: white;
+  margin-bottom: 20px;
 }
 
 [class^="companies-popover"] p {
@@ -1420,6 +1466,22 @@ h4 {
 
 [class^="companies-popover"] h3 {
   font-size: 1.15em;
+}
+
+.companies-popover-busseys:hover {
+  visibility: visible;
+}
+
+.companies-popover-crane:hover {
+  visibility: visible;
+}
+
+.companies-popover-beat:hover {
+  visibility: visible;
+}
+
+.companies-popover-northern:hover {
+  visibility: visible;
 }
 
 .logo-busseys-img:hover ~ .companies-popover-busseys {
@@ -1486,6 +1548,58 @@ footer p {
 
 .social-media :nth-child(3) :hover {
   background-color: #0077b5;
+}
+
+/*ACCREDITATIONS-ACCREDITATIONS-ACCREDITATIONS-ACCREDITATIONS-ACCREDITATIONS-*/
+.accreditations {
+  background: white;
+}
+
+.accreditations-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.accreditations-container div {
+  display: inline-block;
+  width: 14.5%;
+  margin: auto;
+  opacity: 0.8;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.accreditations-container div:nth-of-type(1) {
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+.accreditations-container div:nth-of-type(2) {
+  width: 5%;
+  margin-top: -5px;
+}
+
+.accreditations-container div:nth-of-type(4) {
+  margin-right: 0;
+}
+
+.accreditations-container div img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+.accreditations-container div:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 @media only screen and (max-width: 1260px) {
